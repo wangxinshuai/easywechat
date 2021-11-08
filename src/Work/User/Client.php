@@ -220,4 +220,23 @@ class Client extends BaseClient
 
         return $this->httpGet('cgi-bin/corp/get_join_qrcode', ['size_type' => $sizeType]);
     }
+
+
+    /**
+     * get hash mobile
+     *
+     * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
+     *
+     * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function getHashMobile(string $mobile)
+    {
+        $params = [
+            'mobile' => $mobile,
+        ];
+
+        return $this->httpPostJson('cgi-bin/user/get_mobile_hashcode', $params);
+    }
+
 }
