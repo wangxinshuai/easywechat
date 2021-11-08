@@ -1,6 +1,6 @@
 {
-  "name": "overtrue/wechat",
-  "description": "微信SDK",
+  "name": "wangxinshuai/wechat",
+  "description": "微信SDK, 基于easywechat,扩展了企业微信的getHashMobile方法",
   "keywords": [
     "easywechat",
     "wechat",
@@ -11,8 +11,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "overtrue",
-      "email": "anzhengchao@gmail.com"
+      "name": "wangxinshuai",
+      "email": "wangxinshuai@xiavan.com"
     }
   ],
   "require": {
